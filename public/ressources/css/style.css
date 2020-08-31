@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding:0;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  body{
+      margin: 0;
+      font-size: .8rem;
+      min-height: 100vh;
+      min-width: 36rem;
+  }
+@font-face{
+    font-family: "Times New Roman", Times, serif;
+    src:url(../font-awesome/webfonts/fa-brands-400.svg);
+}
+header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(42, 213, 236) ;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+}
+header>nav>ul {
+    display:flex;
+    list-style-type: none ;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header>*{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+header>nav>ul>*{
+    padding: 10px;
+}
+header>nav>ul>*:hover{
+    cursor: pointer;
+    color: rgb(30, 204, 210);
+    background-color: gainsboro;
+}
+body{
+    background-color: gainsboro;
+
+}
+#home{
+    /*background-image: url("../images/nature.jpg") ;*/
+    background-position: center;
+    background-size: auto;
+    min-width: 320px;
+    min-height: 200px;
+    width: 100%;
+/*width: calc(100% - 2 * 10px - 2 * 10px); prend en compte le margin et le padding*/
+    box-sizing: border-box;
+    padding: 10px;
+}
