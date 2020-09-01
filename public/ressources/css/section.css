@@ -1,0 +1,21 @@
+#home{ 
+    margin-top: 80px;
+    padding:0;
+    background-color: cadetblue;
+    color:whitesmoke
+  }
+  #imageHome>img{
+    width: 70%;
+    min-width: 300px;
+    margin: 20px auto;
+  }
+  #imageHome{
+  text-align: center;
+  }
+  #home>p{
+  text-align: center;
+  }
+#home>div{
+  text-align: center;
+
+}

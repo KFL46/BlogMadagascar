@@ -1,5 +1,4 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding:0;
 }
@@ -21,7 +20,7 @@ header{
     background: url('../images/fontNavBar.png') ; 
     background-size: contain;
     background-repeat: repeat-x;
-    height: 70px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -33,12 +32,11 @@ nav{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 70px;
+    height: 50px;
 }
-header>nav>h1>a>img{
+nav>h1>a{
     display: flex;
-    justify-content: center;
-
+    align-items: flex-start;
 }
 nav>ul {
     display:flex;
@@ -47,10 +45,7 @@ nav>ul {
     justify-content: flex-end;
 }
 
-header>*{
-    margin-left: 20px;
-    margin-right: 20px;
-}
+
 header>nav>ul>*{
     padding: 10px;
 }
@@ -67,7 +62,6 @@ body{
     /*background-image: url("../images/nature.jpg") ;*/
     background-position: center;
     background-size: auto;
-    margin: 70px;
     min-width: 320px;
     min-height: 200px;
     width: 100%;
