@@ -44,8 +44,6 @@ nav>ul {
     align-items: center;
     justify-content: flex-end;
 }
-
-
 header>nav>ul>*{
     padding: 10px;
 }
@@ -56,7 +54,6 @@ header>nav>ul>*:hover{
 }
 body{
     background-color: gainsboro;
-
 }
 #home{
     /*background-image: url("../images/nature.jpg") ;*/

@@ -15,10 +15,9 @@
     list-style-type: none;
     justify-content: space-around;
     flex-direction: row;
-
 }
 .header-nav>ul>*{
-    margin: 5px;
+    margin: 6px;
 }
 .header-nav>ul:last-child{
     margin-right: 20px;
