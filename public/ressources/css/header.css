@@ -1,0 +1,30 @@
+.header-nav{
+    margin: 0%;
+    padding: 0%;
+    background: url('../images/fontNavBar.png') ; 
+    background-size: contain;
+    background-repeat: repeat-x;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0%;
+}
+.header-nav>ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.header-nav>ul>*{
+    margin: 6px;
+}
+.header-nav>ul:last-child{
+    margin-right: 20px;
+}
+.header-nav>h1{
+    margin-left: 20px;
+}
+.header-nav>h1:hover{
+    cursor: pointer;
+}
