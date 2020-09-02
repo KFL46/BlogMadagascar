@@ -4,13 +4,13 @@
 }
 html {
     scroll-behavior: smooth;
-  }
-  body{
-      margin: 0;
-      font-size: .8rem;
-      min-height: 100vh;
-      min-width: 36rem;
-  }
+}
+body{
+    margin: 0;
+    font-size: .8rem;
+    min-height: 100vh;
+    min-width: 36rem;
+}
 @font-face{
     font-family: "Times New Roman", Times, serif;
     src:url(../font-awesome/webfonts/fa-brands-400.svg);
