@@ -1,20 +1,35 @@
 #home{ 
-    margin-top: 80px;
+    margin-top: 70px;
     padding:0;
-    background-color: cadetblue;
-    color:whitesmoke
+    background-color: rgb(57, 230, 236);
+    /*background-image: url("../images/transportradi.jpg");*/
+    background-size: cover;
+    /*background-repeat: no-repeat;*/
+    color: rgb(202, 188, 188));
+  
   }
   #imageHome>img{
     width: 70%;
     min-width: 300px;
     margin: 20px auto;
   }
+  @media all and (max-width:284px){
+        #home{
+          margin-top:90px;
+        }
+  }
   #imageHome{
   text-align: center;
   }
-  #home>p{
-  text-align: center;
-  }
+
 #home>div{
+  top:0%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   text-align: center;
+}
+#home>div>*{
+  width:300px;
+  margin: 10px;
 }

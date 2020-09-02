@@ -2,18 +2,18 @@ footer{
     display: flex;
     font: 1rem 'Fira Sans', sans-serif;
     width: 100%;
-    padding: 5px;
     justify-content: space-around;
     background-color: lightgrey;
     color:black ;
-    
-}
+    padding: 20px;
+    height: 50px;
+    }
 .fa-facebook-square{
     color: #3b5998;
 }
 .fa-twitter-square{
     color: #00acee;
 }
-.fa-whatsapp-square{
-    color: #075e54;
+.fab-fa-instagram{
+    color: #3f729b;
 }

@@ -1,6 +1,11 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
 .header-nav{
-    margin: 0%;
-    padding: 0%;
+    top: 0%;
     background: url('../images/fontNavBar.png') ; 
     background-size: contain;
     background-repeat: repeat-x;
@@ -8,16 +13,18 @@
     display: flex;
     justify-content: space-between;
     position: fixed;
-    top: 0%;
+
 }
+
 .header-nav>ul{
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     justify-content: space-around;
     flex-direction: row;
 }
 .header-nav>ul>*{
-    margin: 6px;
+    margin: 7px;
 }
 .header-nav>ul:last-child{
     margin-right: 20px;
@@ -28,3 +35,13 @@
 .header-nav>h1:hover{
     cursor: pointer;
 }
+.lienBlanc>a{
+    color:white;
+}
+.lienRouge>a{
+    color:red;
+}
+.lienVert>a{
+    color:green;
+}
+
