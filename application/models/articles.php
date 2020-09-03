@@ -12,8 +12,9 @@
             ]
         );
     
-        $query = ' SELECT * FROM articles';
+        $query = ' SELECT * FROM articles INNER JOIN redacteurs ON articles.redacteurId = redacteurs.id ORDER BY dateParution';
         $sth= $dbh->query($query);
         $articles = $sth->fetchAll();
+        
         return $articles;
     }

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<link rel="stylesheet" href="../../public/ressources/css/header.css">
+<link rel="stylesheet" href="../../public/ressources/css/section.css">
+<link rel="stylesheet" href="../../public/ressources/css/footer.css">
+</head>
+<body>
+    <h1>Rédiger vos articles</h1>
+    <div class="topnav">
+        <a class="active" href="#home">Articles</a>
+    </div>   
+    <form method="post" action="insertionArticle.php" enctype="multipart/form-data" >
+        <fieldset>
+            <legend>Rédacteur</legend>
+            <input type="text" name="titre" placeholder="Titre">
+            <textarea name="descriptif" rows="10" cols="30" placeholder="Rédiger votre article"></textarea>
+            <input type="text" name="pseudo" placeholder="Pseudo">
+            <input type="hidden" name="MAX_FILE_SIZE" value="<?= MAX_FILE_SIZE ?>"> 
+            <input type="file" name="images[]" multiple accept="<?= implode(',', MIME_TYPES_ACCEPTED) ?>">
+            <button type="submit">Envoyer</button>
+        </fieldset>
+    </form>
+</body>
+</html>
