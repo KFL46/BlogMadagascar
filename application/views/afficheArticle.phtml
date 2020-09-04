@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+        crossorigin="anonymous"/>
+        <link rel="stylesheet" href="../../public/ressources/css/header.css">
+        <link rel="stylesheet" href="../../public/ressources/css/section.css">
+        <link rel="stylesheet" href="../../public/ressources/css/footer.css">
+        <link rel="stylesheet" href="../../public/ressources/css/afficheArticle.css">
+
+        <title>Blog Malagasy</title>
+
+    <title>Document</title>
+</head>
+<body>
+<?php include 'navBar.phtml' ?>
+<section id="home">
+<div class="content">
+
+    <h2>
+        <?= htmlspecialchars($article['titre']) ?>
+    </h2>
+    <img src="../../public/ressources/images/<?= htmlspecialchars($article['urlImage']) ?>">
+    <p>
+        <?= htmlspecialchars($article['contenu']) ?>
+    </p>
+    <form action="commentaires.php" method="POST">
+			<fieldset>
+                <textarea name="commentaires" rows="10" cols="30" placeholder="Insérer votre commentaire"></textarea>
+				<button type="submit">Valider</button>
+			</fieldset>
+    </form>
+</div>
+</section>
+</body>
+</html>

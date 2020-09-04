@@ -18,12 +18,6 @@
                     <a href="#accueil" class="active"></a>
                     <img src="../../public/ressources/images/madagascar-flag-button-square-icon-64.png" alt="Drapeau Malagasy"></a>
                 </h1>
-        <?php if(session_status() === PHP_SESSION_NONE OR !array_key_exists('userId', $_SESSION)): ?> <!-- Si le session contient l'dentifiant de l'utilisateur.-->
-                    <a href="authentification.php">Se connecter</a>
-        <?php else: ?>
-                    <a href="insertion.php">Publier une annonce</a>
-                    <a href="deconnexion.php">Se déconnecter</a>
-        <?php endif ?>
                 <ul>
                     <li class="lienBlanc"><a href="#artisanat">ARTISANAT</a></li>
                     <li class="lienRouge"><a href="#plantes">PLANTES</a></li>
@@ -42,10 +36,10 @@
                             <?= htmlspecialchars($article['titre']) ?>
                         </h2>
                         <div class="imageAccueil">
-                            <img src="../../public/ressources/images/<?= htmlspecialchars($article['urlImage']) ?>">
+                        <a href="afficheArticle.php?id=<?= intval($article['id']) ?>"><img src="../../public/ressources/images/<?= htmlspecialchars($article['urlImage']) ?>"></a>
                         </div>
                         <p>
-                            <?= htmlspecialchars($article['contenu']) ?>
+                            <?= htmlspecialchars($article['resume']) ?>
                         </p>
                         <p>
                             Rédigé le : <?= htmlspecialchars($article['dateParution']) ?> par : <?= htmlspecialchars($article['pseudo']) ?>

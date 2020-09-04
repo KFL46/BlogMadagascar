@@ -5,26 +5,22 @@
     background-size: cover;
     color: rgb(202, 188, 188);
 }
-
 @media all and (max-width:284px){
-  #home{
-    margin-top:80px;
-  }
+    #home{
+margin-top:80px;
+}
 }
 
 #home>div{
-  top:0%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  text-align: center;
-  color: blue;
+top:0%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+text-align: center;
+color: blue;
 }
 
 #home>div>*{
-  width:300px;
-  margin: 10px;
-}
-#home>div>image{
-
+width:300px;
+margin: 10px;
 }

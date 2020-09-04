@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+    crossorigin="anonymous" />
 <link rel="stylesheet" href="../../public/ressources/css/header.css">
 <link rel="stylesheet" href="../../public/ressources/css/section.css">
 <link rel="stylesheet" href="../../public/ressources/css/footer.css">
 
-    <title>Document</title>
+    <title>Blog_Malagasy</title>
 </head>
 <body>
-    
+    <h1>Vos articles</h1>
+    <nav>
+    <a href="deconnexion.php" class="active">Déconnexion</a>
+    <a href="tableaudebord.php">Articles parus</a>
+</nav>
+<?php foreach($articles as $key => $article): ?>
+    <a href="./insertionArticle.phpkey=<?= intval($article['id']) ?>">Insérer un article</a>
+    <a href="./suppression.php?key=<?= intval($article['id']) ?>">Supprimer un article</a>  
+    <a href="./modification.php?key=<?= intval($article['id']) ?>">Modifier un article</a>
+    <article>
+        <h3><?= htmlspecialchars($article['titre']) ?></h3>    
+        <img src="<?= htmlspecialchars($article['urlImage']) ?>">
+        <p><?= htmlspecialchars($article['contenu']) ?></p>
+        <p><?= htmlspecialchars($article['resume']) ?></p>
+        <span><?= htmlspecialchars($article['dateParution']) ?></span>
+    </article>
+<?php endforeach ?>
+
 </body>
 </html>
