@@ -1,9 +1,21 @@
-#home{ 
+/*#home{ 
     margin-top: 70px;
     padding:0;
     background-color: rgb(157, 232, 233);
     background-size: cover;
     color: rgb(202, 188, 188);
+}*/
+#home{
+  background-image: url("../images/nature.jpg") ;
+  background-position: center;
+  background-size: auto;
+  margin: 70px;
+  min-width: 320px;
+  min-height: 200px;
+  width: 100%;
+/*width: calc(100% - 2 * 10px - 2 * 10px); prend en compte le margin et le padding*/
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 @media all and (max-width:284px){
@@ -23,8 +35,9 @@
 
 #home>div>*{
   width:300px;
-  margin: 10px;
+  margin:10px;
 }
-#home>div>image{
-
+.imageAccueil img{
+  width: 300px;
+  height: 200px;
 }
